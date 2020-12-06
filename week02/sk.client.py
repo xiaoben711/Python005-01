@@ -23,7 +23,7 @@ def post_file(sk_obj, file_path):
             sk_obj.sendall(f.read(1024))
             file_size -= 1024
 
-post_file(sk, "./test.txt")
+post_file(sk, "client/test.txt")
 
 #释放资源
 sk.close()
